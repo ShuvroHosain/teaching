@@ -10,8 +10,7 @@
 </head>
 
 <body>
-    <input type="text" name="" id="">
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <input type="button" value="Button">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/selector.js"></script>
 </body>
