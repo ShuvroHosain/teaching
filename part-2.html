@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+<body>
+    <input type="button" value="Hide" id="toggle_message">
+    <p id="message">You can see this paragraph</p>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $("#toggle_message").click(function() {
+            var value = $("#toggle_message").attr('value');
+            $("#message").toggle("fast");
+
+            if(value == 'Hide') {
+                $("#toggle_message").attr('value', 'show');
+            } else if(value == 'show') {
+                $("#toggle_message").attr('value', 'Hide');
+            }
+        });
+    </script>
+</body>
+</html>
