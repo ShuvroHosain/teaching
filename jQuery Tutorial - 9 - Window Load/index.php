@@ -11,7 +11,9 @@
 
 <body>
     Document
-
+    <img width="200" src="images/1.png"></img>
+    <img width="200" src="images/2.png"></img>
+    <img width="200" src="images/3.png"></img>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/ext.js"></script>
 </body>

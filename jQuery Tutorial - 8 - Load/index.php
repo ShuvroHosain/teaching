@@ -11,7 +11,10 @@
 
 <body>
     Document
-
+    <iframe src="https://www.google.co.uk" frameborder="0"></iframe>
+    <iframe src="https://www.google.co.uk" frameborder="0"></iframe>
+    <iframe src="https://www.google.co.uk" frameborder="0"></iframe>
+    <iframe src="https://www.google.co.uk" frameborder="0"></iframe>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/ext.js"></script>
 </body>
