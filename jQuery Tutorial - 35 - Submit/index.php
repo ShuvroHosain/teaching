@@ -10,14 +10,14 @@
 </head>
 
 <body>
-    <select name="" id="list">
-        <option value="one">One</option>
-        <option value="two">Two</option>
-        <option value="three">Three</option>
-    </select>
+    <div id="feedback"></div>
+    <form action="#" id="signup_form">
+        <input type="email" name="" id="email">
+        <input type="submit" value="Submit" name="" id="">
+    </form>
     <span id="list_feedback"></span>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/change.js"></script>
+    <script type="text/javascript" src="js/submit.js"></script>
 </body>
 
 </html>

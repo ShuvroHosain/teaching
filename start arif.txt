@@ -4,15 +4,21 @@ even listenser or handler:{
     ready
     load
     unload
-    addclass
     focus
     focusin //inside click
+    focusout //outside click
     blur //outside click
-    keyup
     contains(write which will contains)
     change
     keyup
     keydown
+    submit
+    hover
+    scroll
+    select
+    bind
+    mouseenter
+    mouseleave
 }
 
 selector:{
@@ -37,6 +43,8 @@ not sure{
 manipulator{
     .css
     .html
+    .addclass
+    .removeClass()
     
 }
 
@@ -50,4 +58,12 @@ function(
     prev()
     hide()
     show()
+    scrollTop()
+    after()
 )
+
+
+
+problem {
+    part: 44 (live)
+}

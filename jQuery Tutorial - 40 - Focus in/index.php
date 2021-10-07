@@ -10,14 +10,16 @@
 </head>
 
 <body>
-    <select name="" id="list">
-        <option value="one">One</option>
-        <option value="two">Two</option>
-        <option value="three">Three</option>
-    </select>
-    <span id="list_feedback"></span>
+    <p>Your Name:<input type="text" name="" id="name">
+        <span id="name_feedback"></span>
+    </p>
+    <p>Your Age:<input type="text" name="" id="age">
+        <span id="age_feedback"></span>
+    </p>
+
+
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/change.js"></script>
+    <script type="text/javascript" src="js/focus.js"></script>
 </body>
 
 </html>

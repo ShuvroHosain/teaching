@@ -10,14 +10,10 @@
 </head>
 
 <body>
-    <select name="" id="list">
-        <option value="one">One</option>
-        <option value="two">Two</option>
-        <option value="three">Three</option>
-    </select>
-    <span id="list_feedback"></span>
+    <a href="#" id="clickMe">Click Me</a>
+    <div id="toggle_feedbacks"></div>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/change.js"></script>
+    <script type="text/javascript" src="js/toggle.js"></script>
 </body>
 
 </html>

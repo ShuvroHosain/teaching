@@ -10,14 +10,13 @@
 </head>
 
 <body>
-    <select name="" id="list">
-        <option value="one">One</option>
-        <option value="two">Two</option>
-        <option value="three">Three</option>
-    </select>
-    <span id="list_feedback"></span>
+
+    <input type="button" value="Button" class="dublicate">
+
+
+
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/change.js"></script>
+    <script type="text/javascript" src="js/event.js"></script>
 </body>
 
 </html>
