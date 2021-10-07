@@ -10,8 +10,12 @@
 </head>
 
 <body>
-    <input type="text" name="" id=""> <br> <br> <br> <br>
-    <input type="email" name="" id="">
+    <input type="button" value="Bigger" id='bigger'> <br>
+
+    <input type="button" value="Smaller" id='smaller'> <br>
+
+    <p>Paragraph size will change</p>
+    <p>Paragraph size will change also</p>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/selector.js"></script>
 </body>

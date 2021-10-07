@@ -10,8 +10,13 @@
 </head>
 
 <body>
-    <input type="text" name="" id=""> <br> <br> <br> <br>
-    <input type="email" name="" id="">
+    <input type="text" id="search_item" name="">
+    <ul id="names">
+        <li>Arfiul Islam</li>
+        <li>Mehedi Pranto</li>
+        <li>Rimon Khan</li>
+        <li>Rejaul</li>
+    </ul>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/selector.js"></script>
 </body>

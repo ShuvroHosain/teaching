@@ -10,8 +10,9 @@
 </head>
 
 <body>
-    <input type="text" name="" id=""> <br> <br> <br> <br>
-    <input type="email" name="" id="">
+    Name: <input type="text" name="" id=""> <br> <br> <br> <br>
+    Email: <input type="email" name="" id=""><br> <br> <br> <br>
+    Confirm: <input type="email" name="" id="">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/selector.js"></script>
 </body>

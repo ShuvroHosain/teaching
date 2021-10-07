@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <input type="text" name="" id=""> <br> <br> <br> <br>
-    <input type="email" name="" id="">
+    <input type="text" value="" id="key_messege">
+    <span id="messege"></span>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/selector.js"></script>
+    <script type="text/javascript" src="js/key.js"></script>
 </body>
 
 </html>

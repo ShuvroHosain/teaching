@@ -10,10 +10,14 @@
 </head>
 
 <body>
-    <input type="text" name="" id=""> <br> <br> <br> <br>
-    <input type="email" name="" id="">
+    <a href="#" id="double_click">Click Double</a>
+    <div id="menu" style="display: none;">
+        <a href="#">Programs</a> <br>
+        <a href="#">Settings</a><br>
+        <a href="#">Log Off</a>
+    </div>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/selector.js"></script>
+    <script type="text/javascript" src="js/click.js"></script>
 </body>
 
 </html>

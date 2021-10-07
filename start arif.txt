@@ -1,0 +1,53 @@
+even listenser or handler:{
+    click
+    dblclick
+    ready
+    load
+    unload
+    addclass
+    focus
+    focusin //inside click
+    blur //outside click
+    keyup
+    contains(write which will contains)
+    change
+    keyup
+    keydown
+}
+
+selector:{
+    all selector(*)
+    id 
+    class
+    multiple selector
+    element
+    attribute
+    button
+    submit
+    this
+    text
+    even/odd
+}
+
+
+not sure{
+    jQuery.trim(paramiters) //remove both the space of the paramiters value
+}
+
+manipulator{
+    .css
+    .html
+    
+}
+
+method{
+    removeAttr()
+}
+
+function(
+    val()
+    next()
+    prev()
+    hide()
+    show()
+)

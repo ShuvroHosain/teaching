@@ -10,8 +10,11 @@
 </head>
 
 <body>
-    <input type="text" name="" id=""> <br> <br> <br> <br>
-    <input type="email" name="" id="">
+    <form action="#">
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+        <input type="button" value="Sign Up">
+    </form>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/selector.js"></script>
 </body>

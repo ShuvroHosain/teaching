@@ -1,3 +1,5 @@
 $(document).ready(function () {
-    $('table tr:even, .para p:odd').addClass('highlight');
+    var email_default = 'Please Enter Your Email...'
+
+    $("input[type='email']").attr("value", email_default);//attribute email selector
 });

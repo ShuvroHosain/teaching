@@ -10,8 +10,10 @@
 </head>
 
 <body>
-    <input type="text" name="" id=""> <br> <br> <br> <br>
-    <input type="email" name="" id="">
+    <form action="#" enctype="multipart/form-data">
+        <input type="file" id="file"> <br>
+        <button type="submit" id="submit" disabled>Submit</button>
+    </form>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/selector.js"></script>
 </body>
