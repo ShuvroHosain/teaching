@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery</title>
 </head>
+
 <body>
-    <iframe id="iframe" src="https://jquery.com/"></iframe>
+   <input type="button" value="click">
+   <p>Some text</p>
 
     <script src="js/jquery.min.js"></script>
 
     <script type="text/javascript">
-      $("#iframe").load(function(){ 
-          alert("iframe loaded");
-      });
+    $(':button').click(function(){ 
+        $('p').css('background-color', '#000').css('color', '#fff');
+    });
     </script>
-    
+
 </body>
+
 </html>

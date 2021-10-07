@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery</title>
 </head>
+
 <body>
-    <iframe id="iframe" src="https://jquery.com/"></iframe>
+   <input id="button_click" type="button" value="click me">
 
     <script src="js/jquery.min.js"></script>
 
     <script type="text/javascript">
-      $("#iframe").load(function(){ 
-          alert("iframe loaded");
-      });
+    $('#button_click').click(function(){ 
+        // $('#button_click').attr('value', 'please wait..');
+        $(this).attr('value', 'please wait..');
+    });
     </script>
-    
+
 </body>
+
 </html>

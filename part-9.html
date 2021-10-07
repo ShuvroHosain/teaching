@@ -8,12 +8,14 @@
 </head>
 <body>
     <iframe id="iframe" src="https://jquery.com/"></iframe>
+    <iframe id="iframe" src="https://www.php.com/"></iframe>
+    <iframe id="iframe" src="https://html.com/"></iframe>
 
-    <script src="js/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
 
     <script type="text/javascript">
-      $("#iframe").load(function(){ 
-          alert("iframe loaded");
+      $(window).load(function(){ 
+          alert("loaded");
       });
     </script>
     

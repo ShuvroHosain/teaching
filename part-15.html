@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery</title>
 </head>
+
 <body>
-    <iframe id="iframe" src="https://jquery.com/"></iframe>
+    <input type="submit" value="Register">
+    <input type="submit" value="submit">
 
     <script src="js/jquery.min.js"></script>
 
     <script type="text/javascript">
-      $("#iframe").load(function(){ 
-          alert("iframe loaded");
-      });
+    $(':submit').click(function(){ 
+        $(this).attr('value', 'Please wait...')
+    });
     </script>
-    
+
 </body>
+
 </html>

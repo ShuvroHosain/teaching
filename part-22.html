@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style></style>
+</head>
+
+<body>
+   <p>Name: <br><input type="text"></p>
+   <p>Email: <br><input type="email" size="30"></p>
+
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var email_default = 'Enter your email address...';
+
+            $('input[type="email"]').attr('value', email_default).focus(function(){
+                if($(this).val() == email_default) {
+                    $(this).attr('value', '');
+                }
+            }).blur(function(){
+                if($(this).val() == '') {
+                    $(this).attr('value', email_default);
+                }
+            });
+        })
+    </script>
+</body>
+</html>
