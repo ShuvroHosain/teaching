@@ -19,6 +19,7 @@ even listenser or handler:{
     bind
     mouseenter
     mouseleave
+    mousemove
 }
 
 selector:{
@@ -38,6 +39,7 @@ selector:{
 
 not sure{
     jQuery.trim(paramiters) //remove both the space of the paramiters value
+    length
 }
 
 manipulator{
