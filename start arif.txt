@@ -21,6 +21,7 @@ even listenser or handler:{
     mouseleave
     mousemove
     mouseout
+    each
 }
 
 selector:{
@@ -69,4 +70,5 @@ function(
 
 problem {
     part: 44 (live)
+    part: 59(change)
 }
