@@ -10,9 +10,10 @@
 </head>
 
 <body>
-    <a href="https://www.google.com" class="hover" hoversome='Google is a powerfull search engine'>Google</a> <br><br><br><br>
-    <img src="images/1.png" width="400px" class="hover" hoversome='This is wonderfull image' alt="">
-    <div id="hoverdiv"></div>
+    <a href="https://www.google.com" class="hover">Google</a>
+    <div class="hover">
+
+    </div>
 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/hovertext.js"></script>

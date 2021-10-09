@@ -20,6 +20,7 @@ even listenser or handler:{
     mouseenter
     mouseleave
     mousemove
+    mouseout
 }
 
 selector:{
