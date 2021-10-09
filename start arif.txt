@@ -54,6 +54,7 @@ manipulator{
 
 method{
     removeAttr()
+    find()
 }
 
 function(
