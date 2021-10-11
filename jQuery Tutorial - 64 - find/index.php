@@ -10,22 +10,12 @@
 </head>
 
 <body>
-    <!-- <ul class="names">
-        <li>First Name</li>
-        <li>Last Name</li>
-        <li>Millde Name</li>
-        <li>Surname</li>
-    </ul> -->
+    <p>Lorem ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit. Esse, officiis.</p>
 
+    <strong>Another</strong>
 
-    <ul class="menu">
-        <li>User</li>
-        <li>Settings</li>
-        <li>Profile</li>
-        <li>log Out</li>
-    </ul>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/each.js"></script>
+    <script type="text/javascript" src="js/find.js"></script>
 </body>
 
 </html>

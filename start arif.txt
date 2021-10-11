@@ -65,8 +65,16 @@ function(
     show()
     scrollTop()
     after()
+    has()
 )
 
+animation function {
+    linear
+    swing
+    fadeIn()
+    fadeOut()
+    slideDown()
+}
 
 
 problem {

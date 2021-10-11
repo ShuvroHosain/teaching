@@ -1,0 +1,11 @@
+.bold{
+    font-weight: bold;
+}
+
+.highlight{
+    background-color: yellow;
+}
+
+.big{
+    font-size: 120%;
+}

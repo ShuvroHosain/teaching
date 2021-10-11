@@ -10,22 +10,18 @@
 </head>
 
 <body>
-    <!-- <ul class="names">
-        <li>First Name</li>
-        <li>Last Name</li>
-        <li>Millde Name</li>
-        <li>Surname</li>
-    </ul> -->
+    Menu 1
+    <ul>
 
-
-    <ul class="menu">
-        <li>User</li>
-        <li>Settings</li>
-        <li>Profile</li>
-        <li>log Out</li>
+    </ul><br>
+    Menu 2
+    <ul>
+        <li>Hi</li>
+        <li>I am</li>
+        <li>Ariful</li>
     </ul>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/each.js"></script>
+    <script type="text/javascript" src="js/has.js"></script>
 </body>
 
 </html>

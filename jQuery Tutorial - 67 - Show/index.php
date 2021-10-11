@@ -10,22 +10,14 @@
 </head>
 
 <body>
-    <!-- <ul class="names">
-        <li>First Name</li>
-        <li>Last Name</li>
-        <li>Millde Name</li>
-        <li>Surname</li>
-    </ul> -->
+    <a href="#" type="button" id="a_button">Hide</a>
 
 
-    <ul class="menu">
-        <li>User</li>
-        <li>Settings</li>
-        <li>Profile</li>
-        <li>log Out</li>
-    </ul>
+    <div id="hide">
+        <p>This div will be hide</p>
+    </div>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/each.js"></script>
+    <script type="text/javascript" src="js/effects.js"></script>
 </body>
 
 </html>

@@ -10,22 +10,13 @@
 </head>
 
 <body>
-    <!-- <ul class="names">
-        <li>First Name</li>
-        <li>Last Name</li>
-        <li>Millde Name</li>
-        <li>Surname</li>
-    </ul> -->
+    <img id="images" style="display: none;" src="images/1.png" alt="1">
 
-
-    <ul class="menu">
-        <li>User</li>
-        <li>Settings</li>
-        <li>Profile</li>
-        <li>log Out</li>
-    </ul>
+    <div id="feedback">
+        <p></p>
+    </div>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/each.js"></script>
+    <script type="text/javascript" src="js/effects.js"></script>
 </body>
 
 </html>

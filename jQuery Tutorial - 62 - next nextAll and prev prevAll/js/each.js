@@ -1,17 +1,17 @@
 
 $(document).ready(function () {
-  $("#name").click(function(){
-    var faild = false;
-    $("input[type='text']").each(function(){
-      if ($(this).val() == '') {
-      faild = true;
-     }
-    });
-    
-    if (faild == true) {
-      alert('Plese Fill The Form First!')
-    } else if (faild == false) {
-      alert('Thanks for Filling Out The Form!')
-    }
-  });
+  // $('.names li:first').append(' : Ariful Sikder');
+  // $('.names li:last').append(' (:Islam Noyon)');
+
+  // $('.names').find('li').first().append(' :Ariful Sikder');
+  // $('.names').find('li').first().next().append(' :Ariful Sikder');
+  // $('.names').find('li').last().prev().append(' :Ariful Sikder');
+  // $('.names').find('li').prev().append(' :Ariful Sikder');
+  // $('.names').find('li').next().append(' :Ariful Sikder');
+  // $('.names').find('li').nextAll().append(' :Ariful Sikder');
+
+  $('.menu').find('li').first().addClass('bold').click(function () {
+    $(this).nextAll().toggle();
+  }).nextAll().hide();;
+
 });
