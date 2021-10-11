@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">User</a></li>
+        <li>Setting</li>
+        <li>Log Out</li>
+        <li>Delete Account</li> 
+    </ul>    
+    <script src="js/jquery.min.js"></script>
+    <script> 
+     $(document).ready(function() {
+        $('.menu').find('li').first().addClass('bold').hover(function() {
+            $(this).nextAll().toggle();
+        }).nextAll().hide();
+     });
+    </script>
+
+</body>
+</html>

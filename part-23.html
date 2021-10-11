@@ -6,17 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery</title>
-    <style></style>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
 </head>
-
 <body>
-   
+    <p><input id="search_name" type="text"></p>
+   <ul id="names">
+       <li>Alex Garrett</li>
+       <li>Billy Garrett</li>
+       <li>Dale Garrett</li>
+       <li>Ashley Garrett</li>
+   </ul>
 
-    <script src="js/jquery.min.js"></script>
+   <script src="js/jquery.min.js"></script>
+   <!-- <script src="https://johannburkard.de/resources/Johann/jquery.highlight-4.js"></script> -->
     <script type="text/javascript">
         $(document).ready(function(){
-            
+            $('#search_name').keyup(function(){
+                search_name = $(this).val();
+
+                $('#names li').removeClass('highlight')
+                if(jQuery.trim(search_name) != ''){
+                $("#names li:contains('" + search_name +"')").addClass('highlight');
+                }
+            });
         });
     </script>
+
+<!-- <script>
+    $('#search_name').keyup(function() {
+        var search_term = $('#search_name').val();
+        $('#names').removeHighlight().highlight(search_term);
+    });
+</script> -->
 </body>
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style></style>
+</head>
+<body>
+
+    <p>Your name: <input type="text" id="name"> <span id="name_span"></span></p>
+    <p>Your age: <input type="text" id="age"> <span id="age_span"></span></p>
+
+    <script src="js/jquery.min.js"></script>
+
+    <script> 
+     $('#name').focusin(function() {    
+        $('#name_span').html('Enter your full name');
+     });
+    </script>
+
+    <script> 
+     $('#name').focusout(function() {    
+        $('#name_span').html('');
+     });
+    </script>
+
+    <script> 
+     $('#age').focusin(function() {    
+        $('#age_span').html('Enter your current age');
+     });
+    </script>
+
+    <script> 
+     $('#age').focusout(function() {    
+        $('#age_span').html('');
+     });
+    </script>
+</body>
+</html>

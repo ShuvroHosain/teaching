@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        body {
+            margin-top: 0px;
+        }
+        #top_message {
+            display: none;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            width: 700px;
+            background: #000;
+            padding: 20px;
+            font-size: 20px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+  <div id="top_message">
+        <p> We see you're not logged in. Do you want to <a href="#">sign up</a></p>
+        <a href="#" id="hide_message">No, thanks</a>
+    </div>
+   <script src="js/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function() {
+        var speed = 300;
+        $('#top_message').slideDown(speed);
+
+        $('#hide_message').click(function() {
+            $('#top_message').slideUp(speed);
+        });
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style></style>
+</head>
+<body>
+    <input type="button" id="show" value="Show"><input type="button" id="hide" value="Hide">
+
+   <img id="image" src="img/tartan.jpg" alt="Tartan" style="display: none;">
+   <div id="image_feedback"></div>
+
+   <script src="js/jquery.min.js"></script>
+    <script> 
+     $('#show').click(function() {
+         $('#image').fadeIn(3000, function() {
+             $('#image_feedback').html('Image has been shown');
+         });
+     });
+
+     $('#hide').click(function() {
+         $('#image').fadeOut(3000, function() {
+             $('#image_feedback').html('Image has been hidden');
+         });
+     });
+    </script>
+
+</body>
+</html>

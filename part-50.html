@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        #hoverdiv {
+            display: none;
+            position: absolute;
+            font-size: 14px;
+            background-color: #fff;
+            color: #404040;
+            border: 1px solid #999;
+            padding: 7px;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="hoverdiv"></div>
+    <a class="hover" href="https://www.google.co.uk/" hovertext="Google, a powerful search engine">Google</a>
+
+    <!-- <div id="co">
+
+    </div> -->
+    
+    <script src="js/jquery.min.js"></script>
+
+    <script> 
+      $('.hover').mousemove(function(e) {
+        //   $('#co').text('x: ' + e.clientX + ' Y: ' + e.clientY);
+      var hovertext = $(this).attr('hovertext');
+      $('#hoverdiv').css('top', e.clientY).css('left', e.clientX);
+    });
+    </script>
+
+</body>
+</html>

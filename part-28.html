@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style></style>
+</head>
+<body>
+    Font Size: <a href="#" id="smaller">Smaller</a> <a href="#" id="bigger">Bigger</a>
+    <p>This is some text</p>
+    <p>This is some more text</p>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        function change_size(element, size) {
+            var current = parseInt(element.css('font-size'));
+            if (size == 'smaller') {
+                var new_size = current - 2;
+            } else if (size == 'bigger') {
+                var new_size = current + 2;
+            }
+            element.css('font-size', new_size + 'px');
+        }
+      $('#smaller').click(function(){
+          change_size($('p'), 'smaller');
+      });
+
+      $('#bigger').click(function(){
+          change_size($('p'), 'bigger');
+      });
+    </script>
+</body>
+</html>

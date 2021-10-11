@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style></style>
+</head>
+<body>
+   
+    <input type="text" id="user_text"><br>
+    <span id="user_text_feedback"></span>
+
+    <script src="js/jquery.min.js"></script>
+    <script> 
+      $('#user_text').keyup(function() {
+          var user_text = $('#user_text').val();
+          $('#user_text_feedback').html(user_text);
+      })
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style></style>
+</head>
+<body>
+    <input type="text"><input type="text"><input type="text"><input type="button" id="combine" value="Combine">
+    <div id="combined"></div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script> 
+     $(document).ready(function() {
+        $('#combine').click(function() {
+            var failed = false;
+            $('input[type="text"]').each(function() {
+               if ($(this).val() == '') {
+                   failed = true;
+               }
+            });
+
+            if(failed == true) {
+                alert('Fill out all fields');
+            } else if (failed = false) {
+                alert('Thanks for filling out all fields.')
+            }
+        });
+     });
+    </script>
+
+</body>
+</html>
