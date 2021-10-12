@@ -8,17 +8,19 @@
     <title>jQuery</title>
     <style></style>
 </head>
-<body>
-    <input id="name" type="text"><input id="button" type="button" value="Submit">
 
-    <p id="sentence">Your name is: </p>
+<body>
+
+    <input id="button" type="button" value="Load">
+    <div id="content"></div>
+
     <script src="js/jquery.min.js"></script>
-    <script> 
-    $('#button').click(function() {
-        var name = $('#name').val();
-        $('#sentence').append(name);
-    });
+    <script>
+        $('#button').click(function() {
+            $('#content').load('page.php');
+        });
     </script>
 
 </body>
+
 </html>

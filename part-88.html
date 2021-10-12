@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style></style>
+</head>
+<body>
+    <p>
+       5: <input type="text" minlength="5">
+    </p>
+    <p>
+       10: <input type="text" minlength="10">
+    </p>
+    <script src="js/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function() {
+        $('input[type="text"]').focus(function() {
+            this_sel = $(this);
+            minlength = this_sel.attr('minlength');
+            
+            if (minlength != 0 && minlength > 0 && this_sel.val().length < minlength) {
+                this_sel.after('<span> ' + minlength +' characters required.</span>');
+            }
+        }).keyup(function() {
+            if(this_sel.val().length >= minlength) {
+                this_sel.next().remove();
+            }
+        }).blur(function() {
+            this_sel.next().remove();
+        });
+    });    
+    </script>
+
+</body>
+</html>

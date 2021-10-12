@@ -9,15 +9,22 @@
     <style></style>
 </head>
 <body>
-    <input id="name" type="text"><input id="button" type="button" value="Submit">
+    <p>
+       5: <input type="text" minlength="5">
+    </p>
+    <p>
+       10: <input type="text" minlength="10">
+    </p>
 
-    <p id="sentence">Your name is: </p>
     <script src="js/jquery.min.js"></script>
     <script> 
-    $('#button').click(function() {
-        var name = $('#name').val();
-        $('#sentence').append(name);
-    });
+    $(document).ready(function() {
+        $('input[type="text"]').focus(function() {
+            this_val = $(this);
+            minlength = this_val.attr('minlength');
+            alert(minlength);
+        })
+    });    
     </script>
 
 </body>

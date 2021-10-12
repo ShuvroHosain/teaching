@@ -9,14 +9,15 @@
     <style></style>
 </head>
 <body>
-    <input id="name" type="text"><input id="button" type="button" value="Submit">
-
-    <p id="sentence">Your name is: </p>
+    <img class="fit" src="img/berlin.jpg">
+    
     <script src="js/jquery.min.js"></script>
     <script> 
-    $('#button').click(function() {
-        var name = $('#name').val();
-        $('#sentence').append(name);
+    $(document).ready(function() {
+        var w_height = $(window).height();
+        var w_width = $(window).width();
+
+        $('.fit').css('height', w_height).css('width', w_width);
     });
     </script>
 

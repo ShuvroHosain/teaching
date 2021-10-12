@@ -9,15 +9,19 @@
     <style></style>
 </head>
 <body>
-    <input id="name" type="text"><input id="button" type="button" value="Submit">
+   
+    <div id="time"></div>
 
-    <p id="sentence">Your name is: </p>
     <script src="js/jquery.min.js"></script>
     <script> 
-    $('#button').click(function() {
-        var name = $('#name').val();
-        $('#sentence').append(name);
-    });
+    $(document).ready(function() {
+        
+        setInterval(function() {
+            var timestamp = jQuery.now();
+            $('#time').text(timestamp); 
+        })
+       
+    });    
     </script>
 
 </body>

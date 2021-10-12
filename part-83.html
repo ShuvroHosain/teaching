@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        #textarea {
+            height: 200px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <p><textarea id="textarea">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus aspernatur officiis dignissimos accusantium eligendi maiores explicabo esse tempora ut, vitae doloremque quisquam suscipit quae. Commodi fugiat dolores repellat, voluptatem deleniti debitis veniam! Reiciendis nostrum quisquam quas. Ipsum, assumenda asperiores.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus aspernatur officiis dignissimos accusantium eligendi maiores explicabo esse tempora ut, vitae doloremque quisquam suscipit quae. Commodi fugiat dolores repellat, voluptatem deleniti debitis veniam! Reiciendis nostrum quisquam quas. Ipsum, assumenda asperiores.</textarea></p>
+    <div id="feedback"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function() {
+       $('#textarea').scroll(function() {
+           var scroll_top = $(this).scrollTop();
+           $('#feedback').text('Currently at position: ' + scroll_top);
+       })
+    });
+    </script>
+
+</body>
+</html>

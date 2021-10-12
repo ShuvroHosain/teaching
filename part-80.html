@@ -9,14 +9,14 @@
     <style></style>
 </head>
 <body>
-    <input id="name" type="text"><input id="button" type="button" value="Submit">
-
-    <p id="sentence">Your name is: </p>
+    <p><input id="append" type="button" value="Append to"></p>
+    <span id="span">Alex</span>
+    <p id="paragraph2">My name is: </p>
+    
     <script src="js/jquery.min.js"></script>
     <script> 
-    $('#button').click(function() {
-        var name = $('#name').val();
-        $('#sentence').append(name);
+    $('#append').click(function() {
+        $('#span').clone().appendTo('#paragraph2');
     });
     </script>
 

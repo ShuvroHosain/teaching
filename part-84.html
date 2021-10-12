@@ -9,15 +9,15 @@
     <style></style>
 </head>
 <body>
-    <input id="name" type="text"><input id="button" type="button" value="Submit">
+    <p><a href="#" class="link">Bread</a> <a href="#" class="link">Sugar</a> <a href="#" class="link">Tea</a></p>
+    <select id="list"></select>
 
-    <p id="sentence">Your name is: </p>
     <script src="js/jquery.min.js"></script>
     <script> 
-    $('#button').click(function() {
-        var name = $('#name').val();
-        $('#sentence').append(name);
-    });
+    $('.link').click(function() {
+        var item = $(this).text();
+        $('#list').append('<option>' + item + '</option>');
+    })
     </script>
 
 </body>
