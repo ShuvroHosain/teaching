@@ -10,9 +10,11 @@
 </head>
 
 <body>
-    <div id="top_messege"> We see you are not login. Do you want to <a href="#">Sign up?</a></div>
+    <p><input type="text" placeholder="enter name" id="inputVal"><input type="button" value="button" id="btn"></p>
+
+    <p id="appendHere"></p>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/effects.js"></script>
+    <script type="text/javascript" src="js/append.js"></script>
 </body>
 
 </html>

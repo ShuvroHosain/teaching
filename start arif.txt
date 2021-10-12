@@ -66,14 +66,20 @@ function(
     scrollTop()
     after()
     has()
+    delay()
 )
 
 animation function {
-    linear
-    swing
+    linear // in the paramiter
+    swing // in the paramiter
+    speed, slow, normal, fast // in the paramiter
     fadeIn()
     fadeOut()
+    fadeTo()
     slideDown()
+    slideUp()
+    slideToggle()
+    stop()
 }
 
 

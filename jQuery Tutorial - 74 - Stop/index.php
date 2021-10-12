@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <div id="top_messege"> We see you are not login. Do you want to <a href="#">Sign up?</a></div>
+    <p><input type="button" value="StarToggle" id="toggleSlide"><input type="button" value="Stop" id="stop"></p>
+    <p id="image"><img src="images/1.png" alt="1"></p>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/effects.js"></script>
 </body>

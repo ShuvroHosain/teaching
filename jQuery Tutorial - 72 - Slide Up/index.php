@@ -10,7 +10,10 @@
 </head>
 
 <body>
-    <div id="top_messege"> We see you are not login. Do you want to <a href="#">Sign up?</a></div>
+    <div id="top_messege">
+        <p> We see you are not login. Do you want to <a href="#">Sign up?</a></p>
+        <a href="#" id="hide_messege">Not Now!</a>
+    </div>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/effects.js"></script>
 </body>
