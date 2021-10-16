@@ -74,6 +74,7 @@ function(
     appendTo()
     clone()  //copy of the perticular element
     scrollTop()
+    setInterval()
 )
 
 animation function {
@@ -89,8 +90,13 @@ animation function {
     stop()
 }
 
+jquery {
+    jQuery.inArray()
+    jQuery.now()
+}
 
 problem {
     part: 44 (live)
     part: 59(change)
+    part: 89(scrollTop)
 }
