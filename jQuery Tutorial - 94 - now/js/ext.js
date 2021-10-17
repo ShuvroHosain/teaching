@@ -3,5 +3,6 @@ $(document).ready(function () {
     var timestamp = jQuery.now();
     $('#someFeedback').text(timestamp);
   },1);
+  
 });
 

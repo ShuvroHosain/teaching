@@ -75,6 +75,9 @@ function(
     clone()  //copy of the perticular element
     scrollTop()
     setInterval()
+    error() //callback function
+    complete() //callback function
+    success() //callback function
 )
 
 animation function {
@@ -93,6 +96,12 @@ animation function {
 jquery {
     jQuery.inArray()
     jQuery.now()
+}
+
+request {
+    $.get()
+    $.post()
+    $.ajax()
 }
 
 problem {
