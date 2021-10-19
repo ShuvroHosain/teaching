@@ -10,11 +10,9 @@
 </head>
 
 <body>
-    <p><input type="text" name="" id="search_text"><input type="button" value="Find" id="findSearch"></p>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure exercitationem atque, dolore ipsum quibusdam placeat esse aliquam a non?</p>
+    <div class="countdown"></div>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript" src="js/plugin.js"></script>
     <script type="text/javascript" src="js/ext.js"></script>
 </body>
 
