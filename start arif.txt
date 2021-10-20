@@ -104,6 +104,23 @@ request {
     $.ajax()
 }
 
+jquery ui{
+    .draggable() 
+    (paramiters) .draggable({axis: 'x or y', 
+    containment: 'window, document, parent',
+    containment: [x1, y1, x2, y2],
+    cursor: 'crosshair', pointer,
+    opacity: 0.50,
+    grid : [20,20],
+    revert: true,
+    revertDuration: 5000,
+    })
+
+    option{
+        start: 
+    }
+}
+
 problem {
     part: 44 (live)
     part: 59(change)

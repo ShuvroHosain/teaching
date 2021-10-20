@@ -1,0 +1,8 @@
+#hoverTitle{
+    position:absolute;
+    border: 2px solid gray;
+    padding: 10px;
+    display: inline;
+    background-color: #f0f0f0;
+    display: none;
+}
