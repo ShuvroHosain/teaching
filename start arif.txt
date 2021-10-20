@@ -118,7 +118,21 @@ jquery ui{
 
     option{
         start: 
+        drap:
+        stop:
     }
+
+    .droppable()
+    (paramiters) .droppable({
+        hoverClass: 'class',
+        tolerance:'fit or cursor, touch, intersect'
+
+        options{
+            over:
+            out: 
+            drop:
+        }
+    })
 }
 
 problem {
