@@ -133,6 +133,8 @@ jquery ui{
             drop:
         }
     })
+
+    .sortable()
 }
 
 problem {
