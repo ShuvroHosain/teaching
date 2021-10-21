@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style></style>
+</head>
+<body>
+
+    <a href="https://www.google.co.uk/" target="_self">Google</a>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('a').targetBlank();
+        });
+    </script>
+
+    <!-- For Plugin -->
+    <script> 
+    (function($) {
+        $.fn.targetBlank = function() {
+            var targetArray = ['_blank', '_self', '_parent', '_top']
+            var target = jQuery.trim($(this).attr('target'));
+
+            if(target == undefined || target == '' || jQuery.inArray(target, targetArray) == false) {
+                // apply target _blank
+                $(this).attr('target', '_blank')
+            }
+        }
+    })(jQuery);
+    </script>
+
+</body>
+</html>

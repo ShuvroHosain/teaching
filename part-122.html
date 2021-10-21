@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p><input type="text" id="search_term"><input id="search_button" type="button" value="Find"></p>
+    <p class="para">This is paragraph of text. You can search for a paricular word anywhere on this page. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vitae iste impedit reprehenderit, molestiae atque ratione illum expedita quidem tenetur laboriosam praesentium aperiam consectetur animi doloribus dolorem! Neque, soluta dolorem.</p>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://johannburkard.de/resources/Johann/jquery.highlight-4.js"></script>
+
+    <script> 
+    $(document).ready(function() {
+        $('#search_button').click(function() {
+            var search_term = $('#search_term').val();
+            $('.para').removeHighlight().highlight(search_term);
+        })
+    })
+    </script>
+
+</body>
+</html>

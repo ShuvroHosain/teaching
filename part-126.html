@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style></style>
+</head>
+<body>
+    <div id="countdown"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function() {
+       $('#countdown').countdown({from: 5}, function() {
+           window.location = 'http://www.google.co.uk';
+       })
+    });
+    </script>
+    <!-- For Plagin -->
+    <script>
+        (function($) {
+            $.fn.countdown = function(options, callback) {
+               this_selected = this;
+                var settings = {'from': 60};
+                if (options) { $.extend(settings, options)}
+                function countdown_exec() {
+                    
+                }
+            }
+        })(jQuery);
+    </script>
+
+</body>
+</html>

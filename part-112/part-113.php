@@ -11,7 +11,7 @@
 
 <body>
 
-    <h3>Setting</h3>
+    <h3>Settings</h3>
 
     <p> Name: <input type="text" name="" id="name"></p>
     <p>
