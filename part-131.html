@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        #hoverText {
+            display: none;
+            position: absolute;
+            background-color: #f0f0f0;
+            border: 1px solid #404040;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.google.co.uk" title="A powerful search engine">Google</a><br>
+    <a href="http://www.phpacademy.org" title="Video tutorials">phpacademy</a>
+
+    <script src="js/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function() {
+       $('a').hoverText();
+    });
+    </script>
+    <!-- For Plagin -->
+    <script>
+        (function($) {
+            $.fn.hoverText = function() {
+                $(this).after('<div id="hoverText"></div>');
+            
+           $(this).focusIn(function() {
+                var title = $(this).attr('title');
+                $(this).attr('title', '');
+           }).mousemove(function(e) {                  
+                    var top = e.clientY;
+                    var left = e.clientX;
+
+                    // $(this).attr('title', '');
+                    $('#hoverText').css('top', top).css('left', left).text(title).show();
+                    // $(this).attr('title', title);
+                }).mouseout(function() {
+                    // $(this).attr('title', title);
+                    $('#hoverText').hide();
+                });
+            }
+        })(jQuery);
+    </script>
+
+</body>
+</html>
