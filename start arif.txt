@@ -140,6 +140,15 @@ jquery ui{
       'linear',aspectRatio: true, 0.34, 3/5,
        grid: [10, 10], handles: 'e,w,s,n, ne, se, sw',
        maxHeight: 200, minHeight: 300});
+
+       .accordion({fillSpace: true, icons: {'header': 'ui-icon-plus', 'headerSelected': 'ui-icon-minus'},
+       collapsible: true, active: false});
+
+       .datepicker({
+        dateFormat: 'mm/dd/yy', minDate: '-5d', maxDate: '+1m +2d', showButtonPanel: true, showAnim: 'bounce'
+       });
+
+       .diolog()
 }
 
 problem {
