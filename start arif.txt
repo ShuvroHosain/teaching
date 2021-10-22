@@ -135,6 +135,11 @@ jquery ui{
     })
 
     .sortable()
+    .resizable({ aminate: true, ghost: true,
+     animateDuration: 'slow', animationEasing:
+      'linear',aspectRatio: true, 0.34, 3/5,
+       grid: [10, 10], handles: 'e,w,s,n, ne, se, sw',
+       maxHeight: 200, minHeight: 300});
 }
 
 problem {
