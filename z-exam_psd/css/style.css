@@ -1,7 +1,11 @@
-#draggable { 
-    width: 100px;
-    height: 100px;
-    padding: 0.5em;
-    float: left;
-    margin: 0 10px 10px 0; 
-    }
+
+#drop{
+    height: 200px;
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.borderClass {
+    border: 2px solid black;
+}

@@ -11,9 +11,12 @@
 </head>
 
 <body>
-    <div id="draggable">
-        <p>Please drap me away! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dicta hic itaque!</p>
-    </div>
+    <span class="name">Ariful</span>
+    <span class="name">Nur</span>
+    <span class="drag">Noyon</span>
+
+    <div id="drop"></div>
+
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>
     <script type="text/javascript" src="js/ext.js"></script>

@@ -1,8 +1,15 @@
+
 $(document).ready(function () {
-  $('#draggable').draggable({
-    // scroll: true, scrollSensitivity: 100 
-    containment: 'window', axis: 'y'
-  });
+  $('.name, .drag').draggable({ containment: 'document', revert: true });
+
+  $('#drop').droppable({
+    hoverClass: 'borderClass', tolerance: 'pointer', accept: '.name', over: function () {
+      $('#drop').text('something has been dropping!');
+    }, out: function () {
+      $('#drop').text('something has been dropped out!');
+    }, drop: function () {
+      $('#drop').text('something dropped!');
+  }  });
 });
 
 
