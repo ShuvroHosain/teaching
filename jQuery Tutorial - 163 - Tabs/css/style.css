@@ -1,0 +1,12 @@
+#tabs{
+    width: 500px;
+}
+a#ui-id-1 {
+    background-color: green;
+    border: 2px solid red;
+    padding: 10px;
+    cursor: pointer;
+}
+body{
+    font-size: 14px;
+}
