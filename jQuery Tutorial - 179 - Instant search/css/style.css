@@ -1,0 +1,19 @@
+#notification{
+    display: none;
+    position: absolute;
+    height: 50px;
+    width: 20%;
+    float: right;
+    top: 10px;
+    right: 10px;
+    background-color: #0b9406;
+    text-align: center;
+    border-radius: 5px;
+}
+#notification h3{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    color: white;
+    top: 25%;
+}

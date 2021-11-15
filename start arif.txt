@@ -155,4 +155,7 @@ problem {
     part: 44 (live)
     part: 59(change)
     part: 89(scrollTop)
+    part: 164(anchor)
+    part: 166 and 167 (list is not dropping)
+    part: 170(available username)
 }
