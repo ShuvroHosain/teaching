@@ -1,11 +1,14 @@
 $(document).ready(function () {
-  $('#search').keyup(function () {
-    search = $(this).val();
+  var name = prompt('Please enter your name!');
 
-    $.post('php/search.php', { search: search }, function (data) {
-      $('#result').html(data);
-    })
-  })
+  $.post('php/user.php',{name:name, action: 'joined'})
+  setInterval(function () {
+    
+  }, 500);
+
+  $(window).unload(function () {
+    
+  });
 });
 
 

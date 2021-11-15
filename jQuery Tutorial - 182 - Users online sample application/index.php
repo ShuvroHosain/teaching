@@ -11,10 +11,7 @@
 </head>
 
 <body>
-    <span>
-        <input type="text" id="search" placeholder="search something">
-    </span>
-    <div id="result"></div>
+    <div id="users_online"></div>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>
     <script type="text/javascript" src="development-bundle/external/jquery.cookie.js"></script>
