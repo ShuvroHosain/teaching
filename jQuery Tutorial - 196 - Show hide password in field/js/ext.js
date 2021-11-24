@@ -1,4 +1,4 @@
-$(document).ready(function () {
+// $(document).ready(function () {
   $('.emoticon').click(function () {
     textarea_val = jQuery.trim($('#comment').val());
     emoticon_val = $(this).val();
@@ -11,7 +11,7 @@ $(document).ready(function () {
     
   });
 
-});
+// });
 
 
 
