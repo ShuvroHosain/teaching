@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <style>
+        #follow {
+            display: none;
+            position: absolute;
+            left: 75px;
+            top: 10px;
+            height: 135px;
+            width: 180px;
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="follow">
+        <p>This element will follow you all the way down the page</p>
+        <p>You can hide it by clicking on it.</p>
+    </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deserunt non, deleniti atque explicabo adipisci praesentium cum quos quibusdam cupiditate, quae odio. Expedita, officiis fugiat praesentium accusantium provident perspiciatis rem.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste quo excepturi consectetur quod dolore tenetur magnam dicta a facilis minima expedita, inventore, hic eligendi repellat. Quidem atque omnis quae assumenda!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sit consectetur explicabo placeat adipisci voluptates ab numquam debitis neque? Magni sed pariatur excepturi aut nihil veritatis quae porro quidem! Itaque.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos provident illo dicta exercitationem a quisquam. Amet totam perspiciatis corrupti consequuntur illum, repellendus incidunt reiciendis odit? Et, autem numquam. Debitis, voluptatem.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. At id sit consequatur mollitia cum dignissimos suscipit officiis ducimus molestiae, explicabo commodi eum et iste, tenetur neque quos beatae necessitatibus sunt alias rerum! Vel eos corrupti, doloremque laborum nihil consequuntur et obcaecati excepturi, dolore voluptatem earum magni similique fuga? Possimus provident iusto aliquid qui tempore beatae commodi nemo enim eligendi consectetur? Earum doloribus commodi tenetur. Vitae exercitationem officiis officia omnis aspernatur, nihil laudantium quaerat nostrum maiores totam. Praesentium quis nihil tenetur earum voluptates commodi voluptate officiis quisquam consequatur sit asperiores vitae, animi odio magnam ea unde quia? Amet ipsa minus velit.
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var current_top = parseInt($('#follow').css('top'));
+           $('#follow').fadeIn(1000).click(function() {
+               $this.fadeOut(1000);
+           });
+
+           $(window).scroll(function() {
+               var top = $(window).scrollTop();
+               $('#follow').css('top', top + current_top);
+           })
+        });
+    </script>
+
+</body>
+
+</html>

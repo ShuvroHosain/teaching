@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <style></style>
+</head>
+
+<body>
+    <p>Type a comment: <br><textarea id="comment" cols="30" rows="5"></textarea></p>
+    <p>
+        Add emoticon:
+        <input class="emoticon" type="button" value=":)">
+        <input class="emoticon" type="button" value=":(">
+        <input class="emoticon" type="button" value=":D">
+    </p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.emoticon').click(function () {
+                var textarea_val = jQuery.trim($('#comment').val());
+                var emoticon_val = $(this).attr('value');
+
+                if (textarea_val == '') {
+                    var sp = '';
+                } else {
+                    var sp = ' ';
+                }
+                $('#comment').focus().val(textarea_val + sp + emoticon_val + sp);
+            })
+        });
+    </script>
+
+</body>
+
+</html>

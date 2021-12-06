@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+      ul {
+        width: 200px;
+        padding: 0px;
+        list-style: none;
+      }
+    </style>
+</head>
+<body>
+  <ul id="names">
+    <li>Alex</li>
+    <li>Billy</li>
+    <li>Ashley</li>
+  </ul>
+  <ul id="places">
+    <li>London</li>
+    <li>Manchester</li>
+    <li>Sheffield</li>
+  </ul>
+  <div class="sort_status"></div>
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script> 
+    $(document).ready(function() {
+      $('#names, #places').sortable({ containment: 'document', tolerance: 'pointer', 
+      cursor: 'pointer', revert: 'true', opacity: 0.60, connectWith: '#names, #places'
+      });
+      });
+    </script>
+
+</body>
+</html>

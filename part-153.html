@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <style>
+        #main {
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+ <div id="main">
+    <div id="content">
+        <h3><a href="#">About me</a></h3>
+        <div>A little about me <br> I am a web developer <br> And more...</div>
+
+        <h3><a href="#">Portfolio</a></h3>
+        <div>This is my portfolio</div>
+
+        <h3><a href="#">Contact</a></h3>
+        <div>My contact details</div>
+    </div>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script> 
+    $(document).ready(function() {
+      $('#content').accordion({ fillSpace: true, 
+        icons: {'header': 'ui-icon-plus', 'headerSelected': 'ui-icon-minus'}, 
+        collapsible: true, active: false
+    });
+    });
+    </script>
+
+</body>
+</html>

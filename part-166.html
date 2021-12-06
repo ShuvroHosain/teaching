@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <style>
+       ul {
+           width: 100px;
+           padding: 0px;
+           list-style: none;
+       }
+       #list{
+           width: 120px;
+           height: 180px;
+           background-color: #f0f0f0;
+           border: 1px solid #000;
+           overflow: auto;
+       }
+       #list.border {
+           border-width: 2px;
+       }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="item">Soya Milk</li>
+        <li class="item">Bread</li>
+        <li class="item">Water</li>
+    </ul>  
+    <div id="list"></div>  
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function() {
+           $('li').draggable({ containment: 'document', revert: true,
+        start: function() {
+            contents = $(this).text();
+        }
+        });
+           
+           $('#list').droppable({ hoverClass: 'border', accept: '.item',
+        drop: function() {
+            $('#list').append(contents + '<br>');
+        }
+        });
+        });
+    </script>
+
+</body>
+
+</html>

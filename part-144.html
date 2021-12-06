@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        #drop {
+            height: 200px;
+            width: 200px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <span id="drag">Drag me</span>
+ 
+    <div id="drop"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery-ui.min.js"></script> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script> 
+    $(document).ready(function() {
+      $('#drag').draggable({containment: 'document', revert: true});
+
+      $('#drop').droppable({ drop: function() {
+        alert('Dropped');
+      }});
+    });
+    </script>
+
+</body>
+</html>
